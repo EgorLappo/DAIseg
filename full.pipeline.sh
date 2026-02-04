@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Settings
 CONF="all.chr22.hg19.json"

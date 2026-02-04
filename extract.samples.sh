@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # ============================================================================
 # extract.samples.sh - Extract specific samples from 1000 Genomes VCF file

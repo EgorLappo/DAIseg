@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Set the number of parallel jobs (adjust based on your system)
 JOBS=6

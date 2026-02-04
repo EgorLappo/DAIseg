@@ -70,7 +70,7 @@ chr  start_i  end_i  num_variants  pos_in_mask  window_length  coverage
 ### 3. Running HMM
 Runs the Hidden Markov Model to infer introgression tracts.
 ```bash
-python daiseg.py run -json examle.json
+python daiseg.py run -json example.json
 ```
 
 ### 4. Using EM for estimation

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # ============================================================================
 # callability.sh - Calculate genomic callability masks for 1000G and Neanderthal
