@@ -7,6 +7,7 @@ import sys
 # Imports of your modules
 import daiseg.hmm as hmm
 import daiseg.em_alg as em_alg
+import daiseg.main_prep as prep
 
 
 def print_script_usage():
@@ -55,7 +56,7 @@ def main():
     decode_subparser.add_argument("-json", type=str, required=True)
 
     decode_subparser = subparser.add_parser("main.prep", help="Helper")
-    decode_subparser.add_argument("-threads", type=int, required=True)
+    # decode_subparser.add_argument("-threads", type=int, required=True)
     decode_subparser.add_argument("-json", type=str, required=True)
 
     args = parser.parse_args()
@@ -95,11 +96,14 @@ def main():
 
         print(f"Running pipeline... Target Output: {output_file}")
 
-        subprocess.run(
-            ["python", "-u", "main.prep.py", args.json, str(args.threads)],
-            text=True,
-            check=True,
-        )
+        # subprocess.run(
+        #     ["python", "-u", "main.prep.py", args.json, str(args.threads)],
+        #     text=True,
+        #     check=True,
+        # )
+
+        prep.run(args.json)
+
         print("Done.")
 
 

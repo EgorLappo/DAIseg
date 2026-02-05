@@ -5,7 +5,7 @@ import time
 
 import pysam
 
-import preprocessing as utils
+import daiseg.preprocessing as utils
 
 
 def run_step(cmd, desc):
@@ -19,11 +19,15 @@ def run_step(cmd, desc):
 def main():
     if len(sys.argv) < 2:
         sys.exit(" Usage: python main.prep.py <config.json>")
+    cfg_path = sys.argv[1]
+    
+    run(cfg_path)
 
+def run(cfg_path):
     start_time = time.time()
 
     # --- Load Config ---
-    cfg = utils.load_config(sys.argv[1])
+    cfg = utils.load_config(cfg_path)
     chrom_raw = str(cfg["CHROM"])
     files = cfg["files"]
     prefix = cfg["prefix"]
