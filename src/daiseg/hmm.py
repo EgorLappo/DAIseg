@@ -8,7 +8,7 @@ import pandas as pd
 from numba import jit, prange
 from scipy.stats import poisson
 
-import daiseg.obs  # module for creating observation sequence
+import daiseg.obs as obs  # module for creating observation sequence
 
 
 def create_observations(tsv, bed):

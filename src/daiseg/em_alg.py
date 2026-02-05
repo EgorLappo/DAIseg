@@ -1,7 +1,7 @@
 import numpy as np
 from numba import jit, prange, config, set_num_threads
 import json
-import daiseg.hmm
+import daiseg.hmm as hmm
 import gc
 import sys, os
 

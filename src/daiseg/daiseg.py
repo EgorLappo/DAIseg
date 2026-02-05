@@ -5,8 +5,8 @@ import subprocess
 import sys
 
 # Imports of your modules
-import daiseg.hmm
-import daiseg.em_alg
+import daiseg.hmm as hmm
+import daiseg.em_alg as em_alg
 
 
 def print_script_usage():

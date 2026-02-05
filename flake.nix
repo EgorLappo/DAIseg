@@ -24,7 +24,12 @@
             python = pkgs.${pythonAttr};
             pythonEnv = python.withPackages (project.renderers.withPackages { inherit python; });
           in
-          pkgs.mkShell { packages = [ pythonEnv ]; };
+          pkgs.mkShell {
+            packages = with pkgs; [
+              pythonEnv
+              ruff
+            ];
+          };
       });
 
       packages = forAllSystems (
