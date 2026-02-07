@@ -20,8 +20,8 @@ def main():
     if len(sys.argv) < 2:
         sys.exit(" Usage: python main.prep.py <config.json>")
     cfg_path = sys.argv[1]
-    
     run(cfg_path)
+
 
 def run(cfg_path):
     start_time = time.time()
